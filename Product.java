@@ -30,6 +30,8 @@ public class Product {
 		public void removeProducts(int quantity) {
 		this.Quantity -= quantity;
 		}
+		
+	
 
 	public String getName() {
 		return Name;
@@ -78,9 +80,13 @@ public class Product {
 		+ ", $ "
 		+ String.format("%.2f", Price)
 		+ ", "
-		+ Description
-		+" description: "
+		//+ Description
+		+ " description: "
 		+ String.format(Description)
+		+ ", "
+		//+ Category
+		+ " category: "
+		+ String.format(Category)
 		+ ", "
 		+ Quantity
 		+ " units, Total: $ "

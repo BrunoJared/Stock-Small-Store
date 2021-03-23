@@ -16,8 +16,13 @@ public class Program {
 		System.out.println("Enter product data: ");
 		System.out.print("Name: ");
 		product.Name = sc.nextLine();
+		
 		System.out.print("Description: ");
 		product.Description = sc.nextLine();
+		
+		System.out.print("Category: ");
+		product.Category = sc.nextLine();
+		
 		
 		System.out.print("Price: ");
 		product.Price = sc.nextDouble();
@@ -46,7 +51,12 @@ public class Program {
 		product.removeProducts(quantity);
 		System.out.println();
 		
+		
+		
 		System.out.println("Updated data: " + product);
+		
+		
+		
 		sc.close();
 		
 
